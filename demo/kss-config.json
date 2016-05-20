@@ -1,0 +1,14 @@
+{
+  "//": "The source and destination paths are relative to this file.",
+  "source": ".",
+
+  "//": "The css and js paths are URLs relative to the style guide destination.",
+  "css": [
+    "../demo/styles.css"
+  ],
+  "js": [],
+  "builder": "../custom-builder",
+
+  "title": "Amazing Rando's Style Guide",
+  "verbose": true
+}
