@@ -20,7 +20,6 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 * :headdesk:
 * :headdesk:
 * [RTFM](https://github.com/kss-node/kss/blob/spec/SPEC.md)
-* :headdesk:
 * 🎉
 * We'll talk about writing the style guide stuff in a bit.
 
@@ -30,8 +29,11 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 * The `custom-builder` folder only has handlebars stuff. I want to use twig.
 * #$%&
 * Ransack the `kss-node` repo and steal `builder/twig` and rename that to `custom-builder`, though honestly you can name it whatever you like. I like to take my chances with the fact that I'll probably overwrite it by accident.
+* `builder.js` does the magic. Leave it be.
+* `index.twig` JACKPOT. This is the template that'll get used to create the style guide pages.
+* Use your ✨HTML MAGIC ✨ to make it yours.
 
-
+... to be continued ...
 
 
 
