@@ -112,8 +112,3 @@ This repo is my collection of files to remind me of what to do with KSS.
 * `demo` is setup with examples and is used as the basis for a Style Guide.
 * `node_modules` isn't in this repo. C'mon!
 * `styleguide` is the generated Style Guide.
-
-
-
-
-
