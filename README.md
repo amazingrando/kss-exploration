@@ -35,7 +35,30 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 * Come back to the project later and rename `custom-builder` to `custom-builder-twig`.
 * Once you have your template ready for primetime, run `npm-run kss --source [sourceFiles] --builder [templateFolder]`
 
-### So let's talk about those source files now.
+## Can we create a config file?
+
+* **Yes**
+* Create `any-sensible-name.json` and define options.
+
+```
+{
+  "//": "The source and destination paths are relative to this file.",
+  "source": "./",
+
+  "//": "The css and js paths are URLs relative to the style guide destination.",
+  "css": [
+    "styles.css"
+  ],
+  "js": [],
+  "builder": "../custom-builder-twig",
+
+  "title": "Amazing Rando's Style Guide",
+  "verbose": true
+}
+```
+* Run `npm-run kss --config demo/any-sensible-name.json`.
+
+## So let's talk about those source files now.
 
 * `kss-node` produces a microsite with one or more pages that show off your design work. Make it good.
 * It does it's work based on the files in your source folder. We'll call that source folder `demo`, which is short for `demon`.
@@ -81,6 +104,14 @@ h1 { ... }
 * Each section after the first adds a numbered subsection to the rendered Style Guide, so `demo.typography.headers` would be 1.1.1 and `demo.buttons.call-to-action` would be 1.1.14 (assuming 13 other button sections).
 * Want more pages? `Style guide: typography`, `Style guide: buttons`, creates two pages sorted by Weight and Alpha.
 
+## So what is in this repo? What do I do with it?
+
+This repo is my collection of files to remind me of what to do with KSS.
+
+* `custom-builder-twig` is the template for generated Style Guides.
+* `demo` is setup with examples and is used as the basis for a Style Guide.
+* `node_modules` isn't in this repo. C'mon!
+* `styleguide` is the generated Style Guide.
 
 
 
