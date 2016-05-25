@@ -28,11 +28,11 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 * `kss-node` uses "builders" to create style guides. You can get your hands on one with `npm-run kss --clone custom-builder`
 * The `custom-builder` folder only has handlebars stuff. I want to use twig.
 * #$%&
-* Ransack the `kss-node` repo and steal `builder/twig` and rename that to `custom-builder`, though honestly you can name it whatever you like. I like to take my chances with the fact that I'll probably overwrite it by accident.
+* Ransack the `kss-node` repo and steal `builder/twig` and rename that to `custom-builder`, though honestly you can name it whatever you like. I'll take my chances. What are the odds that I'll overwrite it?
 * `builder.js` does the magic. Leave it be.
 * `index.twig` JACKPOT. This is the template that'll get used to create the style guide pages.
 * Use your ✨HTML MAGIC ✨ to make it yours.
-* Come back to the project later and rename `custom-builder` to `custom-builder-twig`.
+* Come back to the project later and rename `custom-builder` to `custom-builder-twig`. :grumble:
 * Once you have your template ready for primetime, run `npm-run kss --source [sourceFiles] --builder [templateFolder]`
 
 ## Can we create a config file?
@@ -56,7 +56,7 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
   "verbose": true
 }
 ```
-* Run `npm-run kss --config demo/any-sensible-name.json`.
+* Run `npm-run kss --config demo/any-sensible-name.json` to create your style guide.
 
 ## So let's talk about those source files now.
 
@@ -77,8 +77,9 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 //
 // Style guide: demo
 ```
+
 * Great now I can create `demo.buttons` and `demo.typography`.
-* Render the style guide ... and buttons comes before typography, but I think that typography should come first.
+* Render the style guide ... and buttons comes before typography, but I think that typography should come first. In fact, they'll take away my Dribbble account if I don't say that.
 * You work with Drupal, so you'll be familiar with the concept of Weight. -10 needs to eat a cheesburger and 10 is John Candy. This lets us sort by Weight, then by Alpha.
 
 ```
@@ -108,7 +109,7 @@ h1 { ... }
 
 This repo is my collection of files to remind me of what to do with KSS.
 
-* `custom-builder-twig` is the template for generated Style Guides.
+* `custom-builder-twig` is the (mostly unstyled) template to generate Style Guides.
 * `demo` is setup with examples and is used as the basis for a Style Guide.
 * `node_modules` isn't in this repo. C'mon!
-* `styleguide` is the generated Style Guide.
+* `styleguide` is a generated Style Guide from the source, `demo`.
