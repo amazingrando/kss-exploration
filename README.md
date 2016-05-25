@@ -75,7 +75,9 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 // Weight: -1
 //
 // Style guide: demo.typography
+h1 { ... }
 ```
+
 * Each section after the first adds a numbered subsection to the rendered Style Guide, so `demo.typography.headers` would be 1.1.1 and `demo.buttons.call-to-action` would be 1.1.14 (assuming 13 other button sections).
 * Want more pages? `Style guide: typography`, `Style guide: buttons`, creates two pages sorted by Weight and Alpha.
 
