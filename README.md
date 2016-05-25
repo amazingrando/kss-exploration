@@ -56,7 +56,8 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 ```
 * Great now I can create `demo.buttons` and `demo.typography`.
 * Render the style guide ... and buttons comes before typography, but I think that typography should come first.
-* You work with Drupal, so you'll be familiar with the concept of Weight. -10 needs to eat a cheesburger and 10 is John Candy.
+* You work with Drupal, so you'll be familiar with the concept of Weight. -10 needs to eat a cheesburger and 10 is John Candy. This lets us sort by Weight, then by Alpha.
+
 ```
 // Buttons
 //
@@ -75,7 +76,8 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 //
 // Style guide: demo.typography
 ```
-
+* Each section after the first adds a numbered subsection to the rendered Style Guide, so `demo.typography.headers` would be 1.1.1 and `demo.buttons.call-to-action` would be 1.1.14 (assuming 13 other button sections).
+* Want more pages? `Style guide: typography`, `Style guide: buttons`, creates two pages sorted by Weight and Alpha.
 
 
 
