@@ -32,7 +32,7 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 * `builder.js` does the magic. Leave it be.
 * `index.twig` JACKPOT. This is the template that'll get used to create the style guide pages.
 * Use your ✨HTML MAGIC ✨ to make it yours.
-* Come back to the project later and rename `custom-builder` to ``custom-builder-twig`.
+* Come back to the project later and rename `custom-builder` to `custom-builder-twig`.
 * Once you have your template ready for primetime, run `npm-run kss --source [sourceFiles] --builder [templateFolder]`
 
 ### So let's talk about those source files now.
@@ -48,24 +48,36 @@ I'd like to use KSS to create style guides for Drupal 8 projects. `kss-node` is 
 * At the top of your KSS comment in the CSS you gave it the title "Demonstration of Styles". [RTFM](https://github.com/kss-node/kss/blob/spec/SPEC.md)
 
 ```
-// KSS Spec
+// Demonstration of Styles
 //
-// Read the KSS spec for details on how to document your stylesheets.
+// Description of the work you're showing off. Blah, blah, [you're a winner](http://can-include-links.com).
 //
-// Compared to the default Ruby implementation at kneath/kss, kss-node includes
-// a few optional features to allow for completely automated style guide
-// building out of the box. The kss-node specifics are detailed in this
-// annotated copy of the
-// [KSS spec](https://github.com/kss-node/kss/blob/spec/SPEC.md).
+// Style guide: demo
+```
+* Great now I can create `demo.buttons` and `demo.typography`.
+* Render the style guide ... and buttons comes before typography, but I think that typography should come first.
+* You work with Drupal, so you'll be familiar with the concept of Weight. -10 needs to eat a cheesburger and 10 is John Candy.
+```
+// Buttons
+//
+// Press 'em while they're hot.
+//
+// Weight: 1
+//
+// Style guide: demo.buttons
+.buttons { ... }
+
+// Typography
+//
+// Handcrafted, artisinal Comic Sans.
 //
 // Weight: -1
 //
-// Style guide: spec
+// Style guide: demo.typography
 ```
 
 
 
-... to be continued ...
 
 
 
