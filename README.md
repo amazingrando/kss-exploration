@@ -117,3 +117,13 @@ This repo is my collection of files to remind me of what to do with KSS.
 ## What about Drupal 8?
 
 Good question. Let me find some time first.
+
+## Postscript
+
+* Discovered from [this video](https://www.youtube.com/watch?v=HFkt1P6rVGs) that you can include data from a .json file in your templates. 
+* Create `buttons.json` to go with your `buttons.twig` to load some data.
+
+```{
+  "label": "This is the button label"
+}```
+* Obviously a weak example but I'm sure that you can see possibilities.
