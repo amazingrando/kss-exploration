@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "kss": "github:kss-node/kss-node",
+    "serve": "^1.4.0"
+  },
   "scripts": {
+    "kss": "kss --config demo/kss-config.json && serve styleguide",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
